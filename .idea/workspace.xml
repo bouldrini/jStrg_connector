@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db8caf1e-7999-4bb5-8a2f-054b8447f737" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/Main.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/Server.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/Server.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/Answer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/Answer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/CreateUserRequest.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/CreateUserRequest.java" />
-    </list>
+    <list default="true" id="db8caf1e-7999-4bb5-8a2f-054b8447f737" name="Default" comment="" />
     <ignored path="jStrg_connector.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/DownloadFileRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.34150612">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -907,7 +901,7 @@
     <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/DownloadFileRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34150612">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
           <folding />
         </state>
       </provider>
