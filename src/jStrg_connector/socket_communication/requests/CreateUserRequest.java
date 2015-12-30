@@ -9,12 +9,25 @@ import java.io.*;
 import java.security.GeneralSecurityException;
 
 public class CreateUserRequest extends Request{
+
+
     public CreateUserRequest(String _new_user_name, String _new_user_password, type _type, String _username, String _password, Server _server) {
         super(_type, _username, _password, _server);
         m_new_user_name = _new_user_name;
         m_new_user_password = _new_user_password;
     }
 
+    public CreateUserRequest(String _new_user_name, String _new_user_password, type _type, String _username, String _password, Server _server, boolean _use_s3_storage, boolean _use_google_storage) {
+        super(_type, _username, _password, _server);
+        m_new_user_name = _new_user_name;
+        m_new_user_password = _new_user_password;
+        m_use_s3_storage = _use_s3_storage;
+        m_use_google_storage= _use_google_storage;
+
+    }
+
+    public boolean m_use_google_storage;
+    public boolean m_use_s3_storage;
     public String m_new_user_name;
     public String m_new_user_password;
 
@@ -47,7 +60,7 @@ public class CreateUserRequest extends Request{
     // HELPER
     public String for_server_request() {
         String query = "";
-        query = "request_type:" + m_type + ";username:" + m_username + ";password:" + m_password + ";new_user_name:" + m_new_user_name + ";new_user_password:" + m_new_user_password + ";";
+        query = "request_type:" + m_type + ";username:" + m_username + ";password:" + m_password + ";new_username:" + m_new_user_name + ";new_userpassword:" + m_new_user_password + ";use_s3_storage:" + m_use_s3_storage + ";use_google_storage:" + m_use_google_storage + ";";
         return query;
     }
 

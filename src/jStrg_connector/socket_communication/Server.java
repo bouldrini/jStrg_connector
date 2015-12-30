@@ -99,6 +99,14 @@ public class Server {
         this.disconnect();
         return answer;
     }
+    public Answer create_user(String _new_user_name, String _new_user_password, String _username, String _password, boolean _use_s3_storage, boolean _use_google_storage) throws IOException, GeneralSecurityException {
+        boolean result = false;
+        System.out.println("ATTEMBING TO CREATE A USER IN JSTRG....");
+        CreateUserRequest request = new CreateUserRequest(_new_user_name, _new_user_password, Request.type.CREATE_USER, _username, _password, this, _use_s3_storage, _use_google_storage);
+        Answer answer  = request.process();
+        this.disconnect();
+        return answer;
+    }
 
     // DELETE FILE
     public Answer delete_file(String _file_path, String _username, String _password) throws IOException, GeneralSecurityException {
