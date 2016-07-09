@@ -1,6 +1,8 @@
 package jStrg_connector.socket_communication.core;
 
+import jStrg_connector.socket_communication.communication.answers.DownloadFileRequestAnswer;
 import jStrg_connector.socket_communication.communication.requests.*;
+import jStrg_connector.socket_communication.transactions.FileDownload;
 import jStrg_connector.socket_communication.transactions.FileUpload;
 
 import java.io.*;
@@ -16,16 +18,19 @@ import java.security.GeneralSecurityException;
 
 public class JstrgServer {
 
+    public String m_default_file_folder;
+
     // CONSTRUCTORS
     public JstrgServer(){}
-    public JstrgServer(String _servername, String _ip_address, int _port) throws IOException {
-        this.m_ip_address = Inet4Address.getByName(_ip_address);
+    public JstrgServer(String _servername, String _ip_address, int _port, String _default_file_folder) throws IOException {
+        m_ip_address = Inet4Address.getByName(_ip_address);
         if (!this.ping())
             throw new NullPointerException("Not reachable");
-        this.m_servername = _servername;
-        this.m_port = _port;
-        this.m_type = TYPE.STORAGE;
-        this.m_path_prefix = "";
+        m_servername = _servername;
+        m_port = _port;
+        m_type = TYPE.STORAGE;
+        m_default_file_folder = _default_file_folder;
+        m_path_prefix = "";
     }
 
     public enum TYPE {DATABASE, STORAGE};
@@ -71,27 +76,36 @@ public class JstrgServer {
     }
 
     // QUERY FOR FILE
-    public Answer download_file(String _file_path, String _username, String _password) throws IOException, GeneralSecurityException {
+    public File download_file(String _file_path, String _file_name, String _owner_name, String _username, String _password) throws IOException, GeneralSecurityException {
         this.connect();
         System.out.println("ATTEMBING TO GET FILE FROM JSTRG....");
-        DownloadFileRequest request = new DownloadFileRequest(_file_path, Request.type.DOWNLOAD_FILE, _username, _password, this);
-        Answer answer  = request.process();
+        DownloadFileRequest request = new DownloadFileRequest(_file_path + _file_name, Request.type.DOWNLOAD_FILE, _owner_name, _username, _password, this);
+        DownloadFileRequestAnswer answer  = (DownloadFileRequestAnswer) request.process();
+        if(answer.m_status == Answer.status.READY_FOR_FILEDOWNLOAD){
+            System.out.println("SHOULD RECEIVE FILE NOW");
+            FileDownload download = new FileDownload(_username, _password, this, answer.m_transaction_id, _file_name, answer.m_file_size);
+            File file = download.process();
+            this.disconnect();
+            return file;
+        }
         this.disconnect();
-        return answer;
+        return null;
     }
 
     // UPLOAD FILE
-    public Answer upload_file(File _file, String _new_file_path, String _file_name, String _username, String _password) throws IOException, GeneralSecurityException {
+    public Answer upload_file(File _file, String _new_file_path, String _ownername, String _file_name, String _username, String _password) throws IOException, GeneralSecurityException {
         boolean result = false;
         System.out.println("ATTEMBING TO UPLOAD FILE TO JSTRG....");
         this.connect();
-        UploadFileRequest request = new UploadFileRequest(_file, _new_file_path, _file_name, Request.type.UPLOAD_FILE_REQUEST, _username, _password, this);
+        UploadFileRequest request = new UploadFileRequest(_file, _new_file_path, _ownername, _file_name, Request.type.UPLOAD_FILE_REQUEST, _username, _password, this);
         Answer answer  = request.process();
+
         if(answer.m_status == Answer.status.READY_FOR_FILEUPLOAD){
             System.out.println("SHOULD SEND FILE NOW");
             FileUpload upload = new FileUpload(_file, _username, _password, this, answer.m_transaction_id, request.m_file_path, request.m_file_name);
-            upload.process();
+            answer = upload.process();
         }
+
         this.disconnect();
         return answer;
     }

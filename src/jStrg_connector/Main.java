@@ -20,23 +20,76 @@ public class Main {
     public static List<JstrgServer> SERVERS = new ArrayList<JstrgServer>();
     public static void main(String[] args) throws IOException, GeneralSecurityException {
 
-        JstrgServer jstrg_main_server = new JstrgServer("Main-Server", "127.0.0.1", 3000);
+        JstrgServer jstrg_main_server = new JstrgServer("Main-Server", "127.0.0.1", 3000, "/tmp/downloads");
         Main.jstrgServer = jstrg_main_server;
         Main.SERVERS.add(jstrg_main_server);
-        Path path = Paths.get("test.jpg");
-        File file = new File(path.toUri());
 
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+        System.out.println();
+        System.out.println();
+        Main.create_users();
+        System.out.println();
+        System.out.println();
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+        System.out.println();
+        System.out.println();
+        Main.test_uploads();
+        System.out.println();
+        System.out.println();
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+        System.out.println();
+        System.out.println();
+        Main.test_downloads();
+        System.out.println();
+        System.out.println();
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+        System.out.println("============================================================================");
+    }
 
-        Answer answer = jstrg_main_server.create_user("Test", "User", "somethinglikedropbox", "somethinglikedropbox");
+    private static boolean test_downloads() throws IOException, GeneralSecurityException {
+        File file;
+        file = Main.jstrgServer.download_file("/Ordner_0/", "file_0.css.php", "Dropboxuser 1", "Dropboxuser 1", "jstrg");
+        if(file != null) {
+            System.out.println("FILE DOWNLOAD DONE");
+        } else if (file == null) {
+            System.out.println("FILE DOWNLOAD ERROR");
+        }
+        return true;
+    }
+
+    public static boolean create_users() throws IOException, GeneralSecurityException {
+        Answer answer;
+        answer = Main.jstrgServer.create_user("Remoteuser1", "user", "somethinglikedropbox", "somethinglikedropbox");
         if(answer.m_status == Answer.status.DONE) {
             System.out.println("CREATING USER DONE");
             System.out.println("");
         } else if(answer.m_status == Answer.status.ERROR){
             System.out.println(answer.m_error_message);
         }
+        answer = Main.jstrgServer.create_user("Remoteuser2", "user", "somethinglikedropbox", "somethinglikedropbox");
+        if(answer.m_status == Answer.status.DONE) {
+            System.out.println("CREATING USER DONE");
+            System.out.println("");
+        } else if(answer.m_status == Answer.status.ERROR){
+            System.out.println(answer.m_error_message);
+        }
+        return true;
+    }
 
-        answer = jstrg_main_server.upload_file(file, "/ordner_1/ordner_2", "test.jpg", "Test", "User");
-        System.out.println(answer);
+    public static boolean test_uploads() throws IOException, GeneralSecurityException {
+        Answer answer;
+        Path path = Paths.get("phil.zip");
+        File file = new File(path.toUri());
+
+        System.out.println("UPLOADING TO OWN ROOT DIRECTORY");
+        answer = Main.jstrgServer.upload_file(file, "/", "Remoteuser1", "phil.zip", "Remoteuser1", "user");
         if(answer.m_status == Answer.status.DONE) {
             System.out.println("FILE UPLOAD DONE");
         } else if (answer.m_status == Answer.status.ERROR){
@@ -44,18 +97,50 @@ public class Main {
             System.out.println(answer.m_error_message);
         }
 
-
-    }
-//    public File download_file(String _path, String _username, String _password) throws IOException, GeneralSecurityException {
-//        File file = null;
-//        Answer answer = Main.jstrgServer.get_file(_path, _username, _password);
+//        System.out.println("OVERWRITE OWN FILE");
+//        answer = Main.jstrgServer.upload_file(file, "/", "Remoteuser1", "musicshop.pdf", "Remoteuser1", "user");
 //        if(answer.m_status == Answer.status.DONE) {
-//            file = answer.m_file;
+//            System.out.println("FILE UPLOAD DONE");
 //        } else if (answer.m_status == Answer.status.ERROR){
+//            System.out.println("FILE UPLOAD ERROR");
 //            System.out.println(answer.m_error_message);
 //        }
-//        return file;
-//    }
+//
+//        System.out.println("UPLOADING TO NOT EXISTING DIRECTORY IN OWN ROOT");
+//        answer = Main.jstrgServer.upload_file(file, "/testfolder/testfolder/", "Remoteuser1", "musicshop.pdf", "Remoteuser1", "user");
+//        if(answer.m_status == Answer.status.DONE) {
+//            System.out.println("FILE UPLOAD DONE");
+//        } else if (answer.m_status == Answer.status.ERROR){
+//            System.out.println("FILE UPLOAD ERROR");
+//            System.out.println(answer.m_error_message);
+//        }
+//
+//        path = Paths.get("phil.zip");
+//        file = new File(path.toUri());
+//
+//        System.out.println("WRITE NEW FILE IN FOREIGN EXISTING DIRECTORY");
+//        answer = Main.jstrgServer.upload_file(file, "/testfolder/testfolder/", "Remoteuser1", "phil.zip", "Remoteuser2", "user");
+//        if(answer.m_status == Answer.status.DONE) {
+//            System.out.println("FILE UPLOAD DONE");
+//        } else if (answer.m_status == Answer.status.ERROR){
+//            System.out.println("FILE UPLOAD ERROR");
+//            System.out.println(answer.m_error_message);
+//        }
+//
+//        path = Paths.get("musicshop.pdf");
+//        file = new File(path.toUri());
+//
+//        System.out.println("OVERWRITE AN EXISTING FILE IN A FOREIGN DIRECTORY");
+//        answer = Main.jstrgServer.upload_file(file, "/testfolder/testfolder/", "Remoteuser1", "musicshop.pdf", "Remoteuser2", "user");
+//        if(answer.m_status == Answer.status.DONE) {
+//            System.out.println("FILE UPLOAD DONE");
+//        } else if (answer.m_status == Answer.status.ERROR){
+//            System.out.println("FILE UPLOAD ERROR");
+//            System.out.println(answer.m_error_message);
+//        }
+
+        return true;
+    }
 }
 
 

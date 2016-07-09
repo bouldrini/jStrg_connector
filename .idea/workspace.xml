@@ -2,37 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db8caf1e-7999-4bb5-8a2f-054b8447f737" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/FileDownloadAnswer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/FileUploadAnswer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/InviteUserToFileFolderRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/InviteUserToFileRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/UploadFileRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Upload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/filter-mobil.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/UploadAnswer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/InviteUserToFileFolderRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/InviteUserToFileRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/UploadFileRequest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/Connection.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Connection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/Cryptor.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Cryptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/Server.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/Answer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/CreateUserRequestAnswer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/CreateUserRequestAnswer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/DeleteFileFolderRequestAnswer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DeleteFileFolderRequestAnswer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/DeleteFileRequestAnswer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DeleteFileRequestAnswer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/DownloadFileRequestAnswer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/answers/UploadFileRequestAnswer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/UploadFileRequestAnswer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/CreateUserRequest.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/CreateUserRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/DeleteFileFolderRequest.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DeleteFileFolderRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/DeleteFileRequest.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DeleteFileRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/DownloadFileRequest.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/requests/Request.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Request.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/Main.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/UploadFileRequest.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/UploadFileRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java" afterPath="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java" />
     </list>
     <ignored path="jStrg_connector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,14 +40,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="JstrgServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileDownload.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUpload.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="31" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Download.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jStrg_connector/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="91" column="81" selection-start-line="91" selection-start-column="81" selection-end-line="91" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-33">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateUserRequestAnswer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/CreateUserRequestAnswer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateUserRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/CreateUserRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadFileRequestAnswer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadFileRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,24 +185,24 @@
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/CreateUserRequestAnswer.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DeleteFileFolderRequestAnswer.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DeleteFileRequestAnswer.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/UploadAnswer.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/UploadFileRequestAnswer.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DeleteFileFolderRequest.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DeleteFileRequest.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/CreateUserRequest.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/FileDownloadAnswer.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/UploadFileRequest.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Request.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Upload.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java" />
-        <option value="$PROJECT_DIR$/src/jStrg_connector/Main.java" />
         <option value="$PROJECT_DIR$/src/jStrg_connector/jstrg/Environment.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Request.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/UploadFileRequest.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java" />
+        <option value="$PROJECT_DIR$/src/jStrg_connector/Main.java" />
       </list>
     </option>
   </component>
@@ -261,6 +328,36 @@
               <option name="myItemId" value="communication" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jStrg_connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jStrg_connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socket_communication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="communication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="answers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -282,13 +379,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jstrg" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -748,41 +845,53 @@
       <workItem from="1464797370981" duration="9297000" />
       <workItem from="1464963866355" duration="19000" />
       <workItem from="1465224276221" duration="5160000" />
-      <workItem from="1465501503047" duration="40000" />
+      <workItem from="1465501503047" duration="428000" />
+      <workItem from="1466025028019" duration="400000" />
+      <workItem from="1466779780555" duration="5000" />
+      <workItem from="1467385913220" duration="1899000" />
+      <workItem from="1467387850243" duration="15000" />
+      <workItem from="1467387904083" duration="561000" />
+      <workItem from="1467389743223" duration="1293000" />
+      <workItem from="1467392075648" duration="597000" />
+      <workItem from="1467633573843" duration="17000" />
+      <workItem from="1467633623044" duration="107000" />
+      <workItem from="1467633845050" duration="72000" />
+      <workItem from="1467634007969" duration="20008000" />
+      <workItem from="1468072398576" duration="8780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14516000" />
+    <option name="totallyTimeSpent" value="48658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36633664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34078807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16080937" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17039403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07082002" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28316832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -990,28 +1099,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DeleteFileRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DeleteFileRequestAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -1025,48 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/FileUploadAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/FileDownloadAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DeleteFileFolderRequestAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/CreateUserRequestAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="109" selection-start-line="15" selection-start-column="109" selection-end-line="15" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/InviteUserToFileRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1074,59 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/io/DataInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8070">
           <caret line="563" column="0" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="37" column="65" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/UploadFileRequestAnswer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/UploadFileRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/jstrg/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1137,34 +1134,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java">
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/jstrg/Environment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/CreateUserRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Upload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DeleteFileRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DeleteFileFolderRequestAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/UploadFileRequestAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/FileUploadAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/FileDownloadAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/UploadFileRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Download.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/DownloadFileRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/DownloadFileRequestAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="31" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/transactions/FileDownload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/JstrgServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/requests/CreateUserRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/communication/answers/CreateUserRequestAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jStrg_connector/socket_communication/core/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jStrg_connector/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="91" column="81" selection-start-line="91" selection-start-column="81" selection-end-line="91" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>

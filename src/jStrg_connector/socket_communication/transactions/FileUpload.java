@@ -35,7 +35,9 @@ public class FileUpload extends Upload {
     }
 
     private boolean send_file(OutputStream _server_output_stream) throws IOException {
-        FileInputStream fis = new FileInputStream(this.m_file.getAbsolutePath().toString());
+        System.out.println(m_file.getAbsolutePath());
+        FileInputStream fis = new FileInputStream(m_file.getAbsolutePath().toString());
+
         byte[] buffer = new byte[4096];
 
         while (fis.read(buffer) > 0) {

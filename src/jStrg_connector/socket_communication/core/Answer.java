@@ -15,6 +15,7 @@ public class Answer {
         m_answer_string = Cryptor.decrypt(_server_answer);
 
         // FILLING ERRORS
+        System.out.println(m_answer_string);
         for(String line : m_answer_string.split(";")) {
             key = line.split(":")[0];
             value = line.split(":")[1];
@@ -25,7 +26,11 @@ public class Answer {
                     m_status = status.DONE;
                 } else if (value.equals(status.READY_FOR_FILEUPLOAD.toString())) {
                     m_status = status.READY_FOR_FILEUPLOAD;
+                }  else if (value.equals(status.READY_FOR_FILEDOWNLOAD.toString())) {
+                    m_status = status.READY_FOR_FILEDOWNLOAD;
                 }
+            } else if (key.equals("file_title")){
+
             } else if (key.equals("error_code")) {
                 if (value.equals(error_code.UNAUTHORIZED.toString())) {
                     m_error_code = error_code.UNAUTHORIZED;
@@ -41,6 +46,8 @@ public class Answer {
                     m_error_code = error_code.INVALID_QUERY;
                 } else if (value.equals(error_code.INSUFFITIANT_PERMISSIONS.toString())) {
                     m_error_code = error_code.INSUFFITIANT_PERMISSIONS;
+                } else if (value.equals(error_code.USER_ALREADY_EXISTS.toString())) {
+                    m_error_code = error_code.USER_ALREADY_EXISTS;
                 }
             } else if (key.equals("error_message")) {
                 m_error_message = value;
@@ -51,8 +58,8 @@ public class Answer {
     }
 
     // CONSTANTS
-    public enum status{DONE, READY_FOR_FILEUPLOAD, ERROR}
-    public enum error_code{UNAUTHORIZED, FILE_NOT_FOUND, FOLDER_NOT_FOUND, INVALID_QUERY, INVALID_FILE_FORMAT, LOCATION_NOT_FOUND, INSUFFITIANT_PERMISSIONS, NOT_ENOUGH_SPACE, UNKNOWN_REQUEST_TYPE}
+    public enum status{DONE, READY_FOR_FILEUPLOAD, ERROR, READY_FOR_FILEDOWNLOAD}
+    public enum error_code{UNAUTHORIZED, FILE_NOT_FOUND, FOLDER_NOT_FOUND, INVALID_QUERY, INVALID_FILE_FORMAT, LOCATION_NOT_FOUND, INSUFFITIANT_PERMISSIONS, NOT_ENOUGH_SPACE, UNKNOWN_REQUEST_TYPE, USER_ALREADY_EXISTS}
 
 
     // ATTRIBUTES
